@@ -13,8 +13,12 @@ vector<string> split(const string &);
  * The function accepts INTEGER_ARRAY ar as parameter.
  */
 
-int simpleArraySum(vector<int> ar) {
-
+int simpleArraySum(int ar_count, int* ar) {
+    int sum =0;
+    for(int i =0;i<ar_count;i++){
+        sum = sum + ar[i];
+    }
+    return sum;
 }
 
 int main()
