@@ -5,7 +5,7 @@ public:
         int maxdiff = 0;
         for(int i : prices){
             if(i<min) min = i;
-            if(i-min > maxdiff) maxdiff = i-min;
+            else if(i-min > maxdiff) maxdiff = i-min;
         }
 
         return maxdiff;
